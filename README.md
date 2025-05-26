@@ -58,8 +58,6 @@ Used `GridSearchCV` to tune the Random Forest Regressor. Best parameters:
 
 ---
 
----
-
 ## 🖥️ Streamlit App
 The Streamlit web application is designed to be user-friendly and responsive. It includes:
 
@@ -87,8 +85,6 @@ The Streamlit web application is designed to be user-friendly and responsive. It
 - Airline-wise price comparison bar chart
 
 ---
-
-## 🚀 Getting Started
 
 ### 1. Clone the repository
 ```bash
