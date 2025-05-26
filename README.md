@@ -74,9 +74,6 @@ The Streamlit web application is designed to be user-friendly and responsive. It
 
 ### 📤 Output:
 - Predicted Price
-- Dynamic Adjustments:
-  - +20% for same-day bookings
-  - +10% for bookings made one day before travel
 - Airline-wise price comparison bar chart
 
 ---
