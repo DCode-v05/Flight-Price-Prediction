@@ -48,6 +48,16 @@ Used `GridSearchCV` to tune the Random Forest Regressor. Best parameters:
 }
 ```
 
+## 📊 Visualizations
+- **Bar Plots**:
+  - Airline vs Price
+  - Number of Stops vs Price
+- **Correlation Heatmap**: Shows relationships between numerical features
+- **Prediction Accuracy Plots**:
+  - Scatter and line plots comparing predicted and actual values
+
+---
+
 ---
 
 ## 🖥️ Streamlit App
@@ -75,16 +85,6 @@ The Streamlit web application is designed to be user-friendly and responsive. It
 ### 📤 Output:
 - Predicted Price
 - Airline-wise price comparison bar chart
-
----
-
-## 📊 Visualizations
-- **Bar Plots**:
-  - Airline vs Price
-  - Number of Stops vs Price
-- **Correlation Heatmap**: Shows relationships between numerical features
-- **Prediction Accuracy Plots**:
-  - Scatter and line plots comparing predicted and actual values
 
 ---
 
