@@ -88,6 +88,8 @@ The Streamlit web application is designed to be user-friendly and responsive. It
 
 ---
 
+## ▶️ How to Run
+
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/Denistanb/flight-price-prediction.git
