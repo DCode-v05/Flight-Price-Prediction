@@ -48,6 +48,8 @@ Used `GridSearchCV` to tune the Random Forest Regressor. Best parameters:
 }
 ```
 
+---
+
 ## 📊 Visualizations
 - **Bar Plots**:
   - Airline vs Price
