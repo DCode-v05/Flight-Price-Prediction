@@ -207,7 +207,7 @@ with col1:
 
 # Visualising
 
-df=pd.read_csv("Data_Train.csv")
+df=pd.read_csv("train/Data_Train.csv")
 st.markdown("""
                       <center><h3 style="color:#white;margin-bottom: 0px;padding-bottom: 0px;"><br>You can Campare the Flight Price<br> among Different Airlines</h3></center><br><br>
                   """,unsafe_allow_html=True)
