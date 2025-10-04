@@ -71,7 +71,7 @@ The Streamlit app provides:
 
 ### 1. Clone the repository
 ```
-git clone https://github.com/TensoRag/Flight-Price-Prediction.git
+git clone https://github.com/DCode-v05/Flight-Price-Prediction.git
 cd Flight-Price-Prediction
 ```
 
@@ -148,5 +148,5 @@ Contributions are welcome! To contribute:
 ---
 
 ## Contact
-- **GitHub:** [TensoRag](https://github.com/TensoRag)
+- **GitHub:** [DCode-v05](https://github.com/DCode-v05)
 - **Email:** denistanb05@gmail.com
