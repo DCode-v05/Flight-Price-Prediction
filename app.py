@@ -1,8 +1,5 @@
-# Installing Streamlit
-
 #!pip install streamlit
 
-# Importing
 
 import streamlit as st
 import pickle
@@ -12,12 +9,10 @@ import time
 import matplotlib.pyplot as plt
 from datetime import date
 
-# Loading the Model
 
 with open("model/best_model.pkl","rb") as file:
   best_model=pickle.load(file)
   
-# Styling
 
 st.markdown("""
             <style>
@@ -72,13 +67,10 @@ st.markdown("""
             """,unsafe_allow_html=True)
     
     
-# Creating Title
-
 st.markdown("""
               <h1 style="text-align:center; color:white;">Flight Price Detection</h1>
             """,unsafe_allow_html=True)
 
-# Getting User Input
 
 c1,c2=st.columns(2)
 def input():
@@ -133,7 +125,6 @@ def input():
     Total_Stops=st.number_input("",min_value=0,max_value=4,step=1)
     
         
-
   data={
           "Airline" : Airline,
           "Source" : Source,
@@ -148,7 +139,6 @@ def input():
 
 user_data,Total_pass,type=input()
 
-# Mapping
 
 air_rep={'IndiGo': 0, 'Air India': 1, 'Jet Airways': 2, 'SpiceJet': 3, 'Multiple carriers': 4, 'GoAir': 5, 'Vistara': 6, 'Air Asia': 7, 'Vistara Premium economy': 8, 'Jet Airways Business': 9, 'Multiple carriers Premium economy': 10, 'Trujet': 11}
 sou_rep={'Banglore': 0, 'Kolkata': 1, 'Delhi': 2, 'Chennai': 3, 'Mumbai': 4}
@@ -160,12 +150,10 @@ user_data["Source"]=sou_rep[user_data["Source"]]
 user_data["Destination"]=des_rep[user_data["Destination"]]
 user_data["Additional_Info"]=add_rep[user_data["Additional_Info"]]
 
-# Creating a DataFrame for Doing Prediction
 df_user=pd.DataFrame()
 for key,value in user_data.items():
   df_user[key]=pd.Series(value)
 
-# Prediciting
 
 col1,col2=st.columns(2)
 with col1:
@@ -178,7 +166,6 @@ with col1:
         time.sleep(2)
       predict=best_model.predict(df_user)[0]
       
-      # Business or Economy
       
       if type=="Business":
         flight_fare=(Total_pass[0]*(predict+(predict*0.25)))+(Total_pass[1]*(predict+(predict*0.25)))
@@ -187,7 +174,6 @@ with col1:
       else:
         flight_fare=0
 
-      # No. of Days b/w Booking and Travel
       
       today=date.today()
       book_date=date(int(df_user["Year"]),int(df_user["Month"]),int(df_user["Date"]))
@@ -205,7 +191,6 @@ with col1:
       else:
         st.error("Please Enter Valid Input 😊")
 
-# Visualising
 
 df=pd.read_csv("train/Data_Train.csv")
 st.markdown("""
